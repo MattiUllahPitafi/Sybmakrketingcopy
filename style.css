@@ -481,3 +481,26 @@ section {
     padding: 0.6rem 1.5rem;
   }
 }
+
+/* Ramadan Button Styling */
+.nav-ramadan-btn {
+    background-color: #ffc107; /* Gold color */
+    border: none;
+    color: #000 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-ramadan-btn:hover {
+    background-color: #ffdb70;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+}
+
+/* Ensure spacing on mobile */
+@media (max-width: 991px) {
+    .nav-ramadan-btn {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+}
