@@ -10,23 +10,72 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
-    :root { --ramadan-gold: #ffc107; --ramadan-dark: #1a1a2e; --arabic-blue: #0d6efd; }
-    body { background-color: #f4f7f6; font-family: 'Poppins', sans-serif; }
-    .urdu-text { font-family: 'Noto Nastaliq Urdu', serif; line-height: 2.5; font-size: 1.1rem; }
-    .arabic-text { font-size: 1.7rem; color: var(--arabic-blue); font-weight: 700; margin-bottom: 12px; line-height: 1.6; }
-    
+    :root { 
+      --ramadan-gold: #ffc107; 
+      --ramadan-dark: #1a1a2e; 
+      --arabic-blue: #0d6efd; 
+    }
+    body { 
+      background-color: #f4f7f6; 
+      font-family: 'Poppins', sans-serif; 
+    }
+    .urdu-text { 
+      font-family: 'Noto Nastaliq Urdu', serif; 
+      line-height: 2.5; 
+      font-size: 1.15rem; 
+    }
+    .arabic-text { 
+      font-size: 1.75rem; 
+      color: var(--arabic-blue); 
+      font-weight: 700; 
+      margin-bottom: 12px; 
+      line-height: 1.6; 
+      text-align: right;
+    }
     .hero-ramadan { 
       background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(26, 26, 46, 0.9)), url('https://images.unsplash.com/photo-1564760290292-23341e4df6ec?auto=format&fit=crop&q=80&w=1600'); 
-      background-size: cover; padding: 100px 0 60px; color: white; text-align: center; border-bottom: 5px solid var(--ramadan-gold); 
+      background-size: cover; 
+      padding: 120px 0 80px; 
+      color: white; 
+      text-align: center; 
+      border-bottom: 5px solid var(--ramadan-gold); 
     }
-    
-    .dua-card { background: white; border-radius: 15px; border: none; transition: all 0.3s ease; border-right: 5px solid var(--ramadan-gold); height: 100%; }
-    .dua-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
-    .dua-number { background: var(--ramadan-gold); color: var(--ramadan-dark); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; margin-bottom: 15px; }
-    
-    .btn-back { position: fixed; top: 20px; left: 20px; z-index: 1050; }
-    .footer-dua { background: white; border-top: 5px solid var(--ramadan-gold); padding: 50px 0; margin-top: 40px; }
-    
+    .dua-card { 
+      background: white; 
+      border-radius: 15px; 
+      border: none; 
+      transition: all 0.3s ease; 
+      border-right: 5px solid var(--ramadan-gold); 
+      height: 100%; 
+    }
+    .dua-card:hover { 
+      transform: translateY(-5px); 
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; 
+    }
+    .dua-number { 
+      background: var(--ramadan-gold); 
+      color: var(--ramadan-dark); 
+      width: 45px; 
+      height: 45px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      border-radius: 50%; 
+      font-weight: bold; 
+      margin-bottom: 15px; 
+    }
+    .btn-back { 
+      position: fixed; 
+      top: 20px; 
+      left: 20px; 
+      z-index: 1050; 
+    }
+    .footer-dua { 
+      background: white; 
+      border-top: 5px solid var(--ramadan-gold); 
+      padding: 60px 0; 
+      margin-top: 40px; 
+    }
     @media (max-width: 768px) { 
       .btn-back { position: absolute; top: 10px; left: 10px; }
       .arabic-text { font-size: 1.4rem; }
@@ -40,8 +89,8 @@
   <header class="hero-ramadan">
     <div class="container" data-aos="fade-down">
       <h3 class="urdu-text" style="color: var(--ramadan-gold);">بِسْمِ اللہِ الرَّحْمٰنِ الرَّحِیْمِ</h3>
-      <h1 class="display-4 fw-bold mb-4">🌙 قرآن پاک کی 40 ربنا دعائیں</h1>
-      <p class="lead urdu-text px-lg-5">رمضان المبارک کے مقدس مہینے میں قرآن پاک کی ان دعاؤں کا کثرت سے ورد کریں اور ہمیں بھی اپنی دعاؤں میں یاد رکھیں۔</p>
+      <h1 class="display-3 fw-bold mb-4">🌙 قرآن پاک کی 40 ربنا دعائیں</h1>
+      <p class="lead urdu-text px-lg-5">سب مارکیٹنگ (SubMarketing) کی جانب سے رمضان المبارک کا خصوصی تحفہ</p>
     </div>
   </header>
 
@@ -49,69 +98,365 @@
     <div class="container">
       <div class="row g-4">
         
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">1</div><p class="text-muted small">البقرہ 2:127</p><p class="arabic-text" dir="rtl">رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنْتَ السَّمِيعُ الْعَلِيمُ</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہم سے قبول فرما، بے شک تو خوب سننے والا، خوب جاننے والا ہے۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">1</div>
+            <p class="text-muted small">البقرہ 2:127</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنْتَ السَّمِيعُ الْعَلِيمُ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم سے قبول فرما، بے شک تو خوب سننے والا، خوب جاننے والا ہے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">2</div><p class="text-muted small">البقرہ 2:128</p><p class="arabic-text" dir="rtl">رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ… إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہمیں اپنا فرمانبردار بنا دے… بے شک تو بہت توبہ قبول کرنے والا، نہایت رحم والا ہے۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">2</div>
+            <p class="text-muted small">البقرہ 2:128</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِنْ ذُرِّيَّتِنَا أُمَّةً مُّسْلِمَةً لَّكَ ۖ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا ۖ إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہمیں اپنا فرمانبردار بنا دے اور ہماری اولاد میں سے بھی ایک فرمانبردار امت بنا، ہمیں اپنی عبادت کے طریقے دکھا اور ہماری توبہ قبول فرما، بے شک تو بہت توبہ قبول کرنے والا، نہایت رحم والا ہے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">3</div><p class="text-muted small">البقرہ 2:201</p><p class="arabic-text" dir="rtl">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہمیں دنیا میں بھلائی دے اور آخرت میں بھی بھلائی دے اور ہمیں آگ کے عذاب سے بچا۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">3</div>
+            <p class="text-muted small">البقرہ 2:201</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہمیں دنیا میں بھلائی دے اور آخرت میں بھی بھلائی دے اور ہمیں آگ کے عذاب سے بچا۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">4</div><p class="text-muted small">البقرہ 2:250</p><p class="arabic-text" dir="rtl">رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہم پر صبر انڈیل دے، ہمارے قدم جما دے اور ہماری مدد فرما۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">4</div>
+            <p class="text-muted small">البقرہ 2:250</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم پر صبر انڈیل دے، ہمارے قدم جما دے اور ہمیں کافروں کے مقابلے میں مدد دے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">5</div><p class="text-muted small">البقرہ 2:286</p><p class="arabic-text" dir="rtl">رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! اگر ہم بھول جائیں یا غلطی کریں تو ہمیں نہ پکڑنا… ہمیں معاف فرما، بخش دے اور رحم فرما۔</p></div></div>
+        <div class="col-md-12" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4 border-warning">
+            <div class="dua-number">5</div>
+            <p class="text-muted small">البقرہ 2:286</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! اگر ہم بھول جائیں یا غلطی کریں تو ہمیں نہ پکڑنا… ہمیں معاف فرما، بخش دے اور ہم پر رحم فرما، تو ہی ہمارا کارساز ہے، پس ہمیں کافروں کے مقابلے میں مدد دے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">6</div><p class="text-muted small">آلِ عمران 3:8</p><p class="arabic-text" dir="rtl">رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہدایت دینے کے بعد ہمارے دلوں کو ٹیڑھا نہ کر اور ہمیں اپنی رحمت عطا فرما۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">6</div>
+            <p class="text-muted small">آلِ عمران 3:8</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہدایت دینے کے بعد ہمارے دل ٹیڑھے نہ کر اور ہمیں اپنی خاص رحمت عطا فرما، بے شک تو ہی بہت عطا کرنے والا ہے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">7</div><p class="text-muted small">آلِ عمران 3:16</p><p class="arabic-text" dir="rtl">رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہم ایمان لائے، پس ہمارے گناہ بخش دے اور ہمیں آگ کے عذاب سے بچا۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">7</div>
+            <p class="text-muted small">آلِ عمران 3:16</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم ایمان لائے، پس ہمارے گناہ بخش دے اور ہمیں آگ کے عذاب سے بچا۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">8</div><p class="text-muted small">آلِ عمران 3:53</p><p class="arabic-text" dir="rtl">رَبَّنَا آمَنَّا بِمَا أَنزَلْتَ…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہم اس پر ایمان لائے جو تو نے نازل فرمایا…</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">8</div>
+            <p class="text-muted small">آلِ عمران 3:53</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا آمَنَّا بِمَا أَنزَلْتَ وَاتَّبَعْنَا الرَّسُولَ فَاكْتُبْنَا مَعَ الشَّاهِدِينَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم اس پر ایمان لائے جو تو نے نازل فرمایا اور ہم نے رسول کی پیروی کی، پس ہمیں گواہی دینے والوں میں لکھ لے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">9</div><p class="text-muted small">آلِ عمران 3:147</p><p class="arabic-text" dir="rtl">رَبَّنَا اغْفِرْ لَنَا ذُنُوبَنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہمارے گناہ اور ہماری زیادتی معاف فرما اور ہمارے قدم جما دے۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">9</div>
+            <p class="text-muted small">آلِ عمران 3:147</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا اغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِي أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہمارے گناہ اور ہماری زیادتیاں معاف فرما، ہمارے قدم جما دے اور ہمیں کافروں کے مقابلے میں مدد دے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">10</div><p class="text-muted small">آلِ عمران 3:191</p><p class="arabic-text" dir="rtl">رَبَّنَا مَا خَلَقْتَ هَذَا بَاطِلًا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! تو نے یہ سب بے کار پیدا نہیں کیا، ہمیں آگ کے عذاب سے بچا۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">10</div>
+            <p class="text-muted small">آلِ عمران 3:191</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا مَا خَلَقْتَ هَذَا بَاطِلًا ۚ سُبْحَانَكَ فَقِنَا عَذَابَ النَّارِ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! تو نے یہ سب بے کار پیدا نہیں کیا، تو پاک ہے، ہمیں آگ کے عذاب سے بچا۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">11</div><p class="text-muted small">آلِ عمران 3:192</p><p class="arabic-text" dir="rtl">رَبَّنَا إِنَّكَ مَن تُدْخِلِ النَّارَ…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! جسے تو آگ میں ڈال دے وہ رسوا ہو گیا…</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">11</div>
+            <p class="text-muted small">آلِ عمران 3:192</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا إِنَّكَ مَن تُدْخِلِ النَّارَ فَقَدْ أَخْزَيْتَهُ ۖ وَمَا لِلظَّالِمِينَ مِنْ أَنصَارٍ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! جسے تو آگ میں ڈال دے وہ رسوا ہوا، اور ظالموں کا کوئی مددگار نہیں۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">12</div><p class="text-muted small">آلِ عمران 3:193</p><p class="arabic-text" dir="rtl">رَبَّنَا إِنَّنَا سَمِعْنَا مُنَادِيًا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہم نے ایک پکارنے والے کو سنا…</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">12</div>
+            <p class="text-muted small">آلِ عمران 3:193</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِي لِلْإِيمَانِ… فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الْأَبْرَارِ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم نے ایک پکارنے والے کو ایمان کی طرف بلاتے سنا… پس ہمارے گناہ بخش دے، ہماری برائیاں دور فرما اور ہمیں نیکوں کے ساتھ وفات دے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">13</div><p class="text-muted small">آلِ عمران 3:194</p><p class="arabic-text" dir="rtl">رَبَّنَا وَآتِنَا مَا وَعَدتَّنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! جو وعدے تو نے ہم سے کیے وہ ہمیں عطا فرما۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">13</div>
+            <p class="text-muted small">آلِ عمران 3:194</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا وَآتِنَا مَا وَعَدتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ الْقِيَامَةِ ۗ إِنَّكَ لَا تُخْلِفُ الْمِيعَادَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! جو وعدے تو نے اپنے رسولوں کے ذریعے ہم سے کیے وہ ہمیں عطا فرما اور قیامت کے دن ہمیں رسوا نہ کرنا، بے شک تو وعدہ خلافی نہیں کرتا۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">14</div><p class="text-muted small">النساء 4:75</p><p class="arabic-text" dir="rtl">رَبَّنَا أَخْرِجْنَا مِنْ هَٰذِهِ الْقَرْيَةِ…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہمیں اس بستی سے نکال جس کے لوگ ظالم ہیں۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">14</div>
+            <p class="text-muted small">النساء 4:75</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا أَخْرِجْنَا مِنْ هَٰذِهِ الْقَرْيَةِ الظَّالِمِ أَهْلُهَا…</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہمیں اس بستی سے نکال جس کے لوگ ظالم ہیں اور ہمارے لیے اپنی طرف سے کوئی مددگار بنا دے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4 border-warning shadow"><div class="dua-number">15</div><p class="text-muted small">الاعراف 7:23</p><p class="arabic-text" dir="rtl">رَبَّنَا ظَلَمْنَا أَنفُسَنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہم نے اپنی جانوں پر ظلم کیا، اگر تو نے ہمیں نہ بخشا تو ہم خسارے والوں میں ہوں گے۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">15</div>
+            <p class="text-muted small">الاعراف 7:23</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم نے اپنی جانوں پر ظلم کیا، اگر تو نے ہمیں نہ بخشا اور ہم پر رحم نہ فرمایا تو ہم خسارہ پانے والوں میں ہوں گے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">16</div><p class="text-muted small">الاعراف 7:47</p><p class="arabic-text" dir="rtl">رَبَّنَا لَا تَجْعَلْنَا مَعَ الْقَوْمِ الظَّالِمِينَ</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہمیں ظالموں کے ساتھ نہ کرنا۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">16</div>
+            <p class="text-muted small">الاعراف 7:47</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا لَا تَجْعَلْنَا مَعَ الْقَوْمِ الظَّالِمِينَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہمیں ظالموں کے ساتھ شامل نہ کرنا۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">17</div><p class="text-muted small">الاعراف 7:89</p><p class="arabic-text" dir="rtl">رَبَّنَا افْتَحْ بَيْنَنَا وَبَيْنَ قَوْمِنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہمارے اور ہماری قوم کے درمیان حق کے ساتھ فیصلہ فرما۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">17</div>
+            <p class="text-muted small">الاعراف 7:89</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا افْتَحْ بَيْنَنَا وَبَيْنَ قَوْمِنَا بِالْحَقِّ وَأَنتَ خَيْرُ الْفَاتِحِينَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہمارے اور ہماری قوم کے درمیان حق کے ساتھ فیصلہ فرما، اور تو سب سے بہتر فیصلہ فرمانے والا ہے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">18</div><p class="text-muted small">یونس 10:85</p><p class="arabic-text" dir="rtl">رَبَّنَا عَلَيْكَ تَوَكَّلْنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہم نے تجھ پر بھروسا کیا۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">18</div>
+            <p class="text-muted small">یونس 10:85</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا عَلَيْكَ تَوَكَّلْنَا وَإِلَيْكَ أَنَبْنَا وَإِلَيْكَ الْمَصِيرُ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم نے تجھ پر بھروسا کیا، تیری ہی طرف رجوع کیا اور تیری ہی طرف لوٹ کر جانا ہے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">19</div><p class="text-muted small">یونس 10:86</p><p class="arabic-text" dir="rtl">رَبَّنَا نَجِّنَا مِنَ الْقَوْمِ الظَّالِمِينَ</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہمیں ظالم قوم سے نجات دے۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">19</div>
+            <p class="text-muted small">یونس 10:86</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا نَجِّنَا مِنَ الْقَوْمِ الظَّالِمِينَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہمیں ظالم قوم سے نجات دے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">20</div><p class="text-muted small">ابراہیم 14:35</p><p class="arabic-text" dir="rtl">رَبِّ اجْعَلْ هَٰذَا الْبَلَدَ آمِنًا…</p><p class="urdu-text" dir="rtl">اے میرے رب! اس شہر کو امن والا بنا۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">20</div>
+            <p class="text-muted small">ابراہیم 14:35</p>
+            <p class="arabic-text" dir="rtl">رَبِّ اجْعَلْ هَٰذَا الْبَلَدَ آمِنًا وَاجْنُبْنِي وَبَنِيَّ أَن نَّعْبُدَ الْأَصْنَامَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے میرے رب! اس شہر کو امن والا بنا اور مجھے اور میری اولاد کو بتوں کی عبادت سے بچا۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">21</div><p class="text-muted small">ابراہیم 14:40</p><p class="arabic-text" dir="rtl">رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ…</p><p class="urdu-text" dir="rtl">اے میرے رب! مجھے اور میری اولاد کو نماز قائم کرنے والا بنا۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">21</div>
+            <p class="text-muted small">ابراہیم 14:40</p>
+            <p class="arabic-text" dir="rtl">رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے میرے رب! مجھے اور میری اولاد کو نماز قائم کرنے والا بنا، اے ہمارے رب! میری دعا قبول فرما۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">22</div><p class="text-muted small">ابراہیم 14:41</p><p class="arabic-text" dir="rtl">رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! مجھے، میرے والدین کو اور تمام مؤمنوں کو بخش دے۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">22</div>
+            <p class="text-muted small">ابراہیم 14:41</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! مجھے، میرے والدین کو اور سب مؤمنوں کو اس دن بخش دے جب حساب قائم ہوگا۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">23</div><p class="text-muted small">المؤمنون 23:94</p><p class="arabic-text" dir="rtl">رَبِّ فَلَا تَجْعَلْنِي فِي الْقَوْمِ الظَّالِمِينَ</p><p class="urdu-text" dir="rtl">اے میرے رب! مجھے ظالموں میں شامل نہ کرنا۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">23</div>
+            <p class="text-muted small">المؤمنون 23:94</p>
+            <p class="arabic-text" dir="rtl">رَبِّ فَلَا تَجْعَلْنِي فِي الْقَوْمِ الظَّالِمِينَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے میرے رب! مجھے ظالموں میں شامل نہ کرنا۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">24</div><p class="text-muted small">الفرقان 25:65</p><p class="arabic-text" dir="rtl">رَبَّنَا اصْرِفْ عَنَّا عَذَابَ جَهَنَّمَ…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہم سے جہنم کا عذاب دور فرما۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">24</div>
+            <p class="text-muted small">الفرقان 25:65</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا اصْرِفْ عَنَّا عَذَابَ جَهَنَّمَ ۖ إِنَّ عَذَابَهَا كَانَ غَرَامًا</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم سے جہنم کا عذاب دور فرما، بے شک اس کا عذاب چمٹ جانے والا ہے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4 border-warning shadow"><div class="dua-number">25</div><p class="text-muted small">الفرقان 25:74</p><p class="arabic-text" dir="rtl">رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہمیں ہماری بیویوں اور اولاد سے آنکھوں کی ٹھنڈک عطا فرما۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4 border-warning shadow">
+            <div class="dua-number">25</div>
+            <p class="text-muted small">الفرقان 25:74</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہمیں ہماری بیویوں اور اولاد سے آنکھوں کی ٹھنڈک عطا فرما اور ہمیں پرہیزگاروں کا پیشوا بنا دے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">26</div><p class="text-muted small">القصص 28:16</p><p class="arabic-text" dir="rtl">رَبِّ إِنِّي ظَلَمْتُ نَفْسِي…</p><p class="urdu-text" dir="rtl">اے میرے رب! میں نے اپنی جان پر ظلم کیا، مجھے بخش دے۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">26</div>
+            <p class="text-muted small">القصص 28:16</p>
+            <p class="arabic-text" dir="rtl">رَبِّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي ۚ فَغَفَرَ لَهُ ۚ إِنَّهُ هُوَ الْغَفُورُ الرَّحِيمُ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے میرے رب! میں نے اپنی جان پر ظلم کیا، پس مجھے بخش دے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">27</div><p class="text-muted small">القصص 28:24</p><p class="arabic-text" dir="rtl">رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ</p><p class="urdu-text" dir="rtl">اے میرے رب! میں اس بھلائی کا محتاج ہوں جو تو مجھ پر نازل کرے۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">27</div>
+            <p class="text-muted small">القصص 28:24</p>
+            <p class="arabic-text" dir="rtl">رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے میرے رب! جو بھلائی تو مجھ پر نازل کرے میں اس کا محتاج ہوں۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">28</div><p class="text-muted small">المؤمنون 23:109</p><p class="arabic-text" dir="rtl">رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہم ایمان لائے، ہمیں بخش دے اور رحم فرما۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">28</div>
+            <p class="text-muted small">المؤمنون 23:109</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنتَ خَيْرُ الرَّاحِمِينَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم ایمان لائے، ہمیں بخش دے اور ہم پر رحم فرما، اور تو سب سے بہتر رحم کرنے والا ہے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">29</div><p class="text-muted small">الحشر 59:10</p><p class="arabic-text" dir="rtl">رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہمیں اور ہمارے ایمان والے بھائیوں کو بخش دے۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">29</div>
+            <p class="text-muted small">الحشر 59:10</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَانِ … رَبَّنَا إِنَّكَ رَءُوفٌ رَّحِيمٌ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہمیں اور ہمارے ان بھائیوں کو بخش دے جو ہم سے پہلے ایمان لائے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">30</div><p class="text-muted small">الممتحنہ 60:4</p><p class="arabic-text" dir="rtl">رَبَّنَا عَلَيْكَ تَوَكَّلْنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہم نے تجھ پر بھروسا کیا۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">30</div>
+            <p class="text-muted small">الممتحنہ 60:4</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا عَلَيْكَ تَوَكَّلْنَا وَإِلَيْكَ أَنَبْنَا وَإِلَيْكَ الْمَصِيرُ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم نے تجھ پر بھروسا کیا، تیری ہی طرف رجوع کیا اور تیری ہی طرف لوٹ کر جانا ہے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">31</div><p class="text-muted small">التحريم 66:8</p><p class="arabic-text" dir="rtl">رَبَّنَا أَتْمِمْ لَنَا نُورَنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہمارا نور کامل فرما اور ہمیں بخش دے۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">31</div>
+            <p class="text-muted small">التحريم 66:8</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہمارا نور ہمارے لیے کامل فرما اور ہمیں بخش دے، بے شک تو ہر چیز پر قادر ہے۔</p>
+          </div>
+        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up"><div class="card dua-card shadow-sm p-4"><div class="dua-number">32</div><p class="text-muted small">البقرہ 2:285</p><p class="arabic-text" dir="rtl">رَبَّنَا اغْفِرْ لَنَا…</p><p class="urdu-text" dir="rtl">اے ہمارے رب! ہمیں بخش دے اور تیری ہی طرف لوٹ کر آنا ہے۔</p></div></div>
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">32</div>
+            <p class="text-muted small">البقرہ 2:285</p>
+            <p class="arabic-text" dir="rtl">سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: ہم نے سنا اور اطاعت کی، اے ہمارے رب! ہم تیری بخشش چاہتے ہیں اور تیری ہی طرف لوٹنا ہے۔</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">33</div>
+            <p class="text-muted small">البقرہ 2:286</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم پر ایسا بوجھ نہ ڈال جیسا تو نے ہم سے پہلے لوگوں پر ڈالا۔</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">34</div>
+            <p class="text-muted small">البقرہ 2:286</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہم پر وہ بوجھ نہ ڈال جس کی ہمیں طاقت نہیں۔</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">35</div>
+            <p class="text-muted small">البقرہ 2:286</p>
+            <p class="arabic-text" dir="rtl">وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: ہمیں معاف فرما، بخش دے اور ہم پر رحم فرما، تو ہی ہمارا کارساز ہے، پس ہمیں کافروں کے مقابلے میں مدد دے۔</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">36</div>
+            <p class="text-muted small">آلِ عمران 3:191</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا مَا خَلَقْتَ هَذَا بَاطِلًا سُبْحَانَكَ فَقِنَا عَذَابَ النَّارِ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! تو نے یہ سب بے کار پیدا نہیں کیا، تو پاک ہے، ہمیں آگ کے عذاب سے بچا۔</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">37</div>
+            <p class="text-muted small">آلِ عمران 3:192</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا إِنَّكَ مَن تُدْخِلِ النَّارَ فَقَدْ أَخْزَيْتَهُ وَمَا لِلظَّالِمِينَ مِنْ أَنصَارٍ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! جسے تو آگ میں ڈال دے وہ رسوا ہوا، اور ظالموں کا کوئی مددگار نہیں۔</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">38</div>
+            <p class="text-muted small">آلِ عمران 3:193</p>
+            <p class="arabic-text" dir="rtl">فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الْأَبْرَارِ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! ہمارے گناہ بخش دے، برائیاں دور فرما اور ہمیں نیکوں کے ساتھ وفات دے۔</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4">
+            <div class="dua-number">39</div>
+            <p class="text-muted small">آلِ عمران 3:194</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا وَآتِنَا مَا وَعَدتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ الْقِيَامَةِ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! جو وعدے تو نے اپنے رسولوں کے ذریعے ہم سے کیے وہ ہمیں عطا فرما۔</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="card dua-card shadow-sm p-4 border-primary">
+            <div class="dua-number">40</div>
+            <p class="text-muted small">الحشر 59:10</p>
+            <p class="arabic-text" dir="rtl">رَبَّنَا إِنَّكَ رَءُوفٌ رَّحِيمٌ</p>
+            <p class="urdu-text" dir="rtl">ترجمہ: اے ہمارے رب! بے شک تو نہایت شفقت کرنے والا، مہربان ہے۔</p>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -132,7 +477,7 @@
   </section>
 
   <footer class="text-center py-4 bg-dark text-white">
-    <p class="mb-0">© 2026 SubMarketing | Ramadan Special Page</p>
+    <p class="mb-0">© 2026 SubMarketing | Designed with Care for Ramadan</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
